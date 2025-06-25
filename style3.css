@@ -1,0 +1,283 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: orange;
+}
+
+.logo span {
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: orange;
+}
+
+/* Home / Intro */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+}
+
+.intro {
+  max-width: 600px;
+}
+
+.name {
+  color: orange;
+  font-weight: bold;
+}
+
+.typing {
+  color: orange;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  background: orange;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 1rem;
+  font-weight: 600;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid orange;
+  color: orange;
+}
+
+.socials {
+  margin-top: 1rem;
+}
+
+.socials a {
+  margin-right: 1rem;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.socials i {
+  margin-right: 5px;
+}
+
+.profile-pic img {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.3);
+}
+
+/* About Section */
+.about {
+  padding: 3rem 2rem;
+  background: #1e1e1e;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: orange;
+}
+
+.about ul {
+  margin-left: 1rem;
+  list-style-type: circle;
+}
+
+/* Services Section */
+.services {
+  padding: 3rem 2rem;
+  background: #111;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: orange;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Contact Section */
+.contact {
+  padding: 3rem 2rem;
+  background: #1e1e1e;
+}
+
+.contact h2 {
+  color: orange;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 200px;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.contact-box {
+  flex: 1;
+  min-width: 250px;
+  text-align: right;
+}
+
+.contact-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact-box input,
+.contact-box textarea {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background: #111;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+
+.contact-box button {
+  padding: 0.5rem 1rem;
+  background: orange;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.contact-box button:hover {
+  background: #ffae00;
+}
+
+/* Responsive fix */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-box form {
+    align-items: flex-start;
+  }
+
+  .contact-box {
+    text-align: left;
+    margin-top: 1rem;
+  }
+}
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #000;
+  color: #ddcece;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic img {
+    margin-top: 2rem;
+    width: 80%;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
