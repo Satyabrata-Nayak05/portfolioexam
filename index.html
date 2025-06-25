@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style3.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">My<span>Portfolio</span></div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <main class="container">
+    <div class="intro">
+      <h2>Hello, I'm <span class="name">Satyabrata Nayak</span></h2>
+      <p>I'm a <span class="typing"></span></p>
+      <p>Passionate about creating exceptional digital experiences...</p>
+      <div class="buttons">
+        <a href="#" class="btn">View My Work</a>
+        <a href="#" class="btn btn-outline">Get in Touch</a>
+      </div>
+      <div class="socials">
+        <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </div>
+    <div class="profile-pic">
+      <img src="a.jpg" alt="Profile Photo" />
+    </div>
+  </main>
+
+  <!-- About Us Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I'm a Computer Science student passionate about full-stack development.</p>
+    <ul>
+      <li>B.Tech in Computer Science (Pursuing)</li>
+      <li>Completed certifications in Web Development</li>
+      <li>Experience with HTML, CSS, JS, Java, and Python</li>
+    </ul>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>My Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <img src="s1.jpg" alt="Service 1" />
+        <p>Web Design</p>
+      </div>
+      <div class="card">
+        <img src="s2.jpg" alt="Service 2" />
+        <p>Java Backend</p>
+      </div>
+      <div class="card">
+        <img src="s3.jpg" alt="Service 3" />
+        <p>UI/UX</p>
+      </div>
+      <div class="card">
+        <img src="s4.jpg" alt="Service 4" />
+        <p>Editing</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <div class="contact">
+  <h2>Contact</h2>
+  <div class="contact-container">
+    <div class="contact-info">
+      <p><strong>Phone:</strong> +91-9876543210</p>
+      <p><strong>Address:</strong> Bhubaneswar, Odisha</p>
+      <p><strong>Email:</strong> example@email.com</p>
+    </div>
+    <div class="contact-box">
+      <form>
+        <fieldset>
+        <input type="text" placeholder="Name" required><br>
+        <input type="email" placeholder="Email" required><br>
+        <input type="tel" placeholder="ph.no" required>
+        <textarea rows="4" placeholder="Message" required></textarea><br>
+        <button type="submit">Send</button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Copyright. All rights reserved.</p>
+  </footer>
+
+  <!-- Typing Script -->
+  <script>
+    var typed = new Typed('.typing', {
+      strings: ["Web Developer", "Gamer", "Vlogger"],
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true
+    });
+  </script>
+</body>
+</html>
